@@ -11,10 +11,6 @@ import { trimTopic } from "../utils";
 
 import Locale from "../locales";
 
-if (!Array.prototype.at) {
-  require('array.prototype.at/auto');
-}
-
 export type Message = ChatCompletionResponseMessage & {
   date: string;
   streaming?: boolean;
